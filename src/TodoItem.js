@@ -1,9 +1,9 @@
 
-function TodoItem(){
+function TodoItem({text,completed}){
     return(
         <ul>
             <span>V</span>  
-                <p> Comprar Pan </p>
+                <p> {text}</p>
             <span>X</span>
         </ul>       
     );
