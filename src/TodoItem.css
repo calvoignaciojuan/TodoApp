@@ -1,0 +1,46 @@
+.TodoItem{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: white;
+    margin: 20px;    
+    position: relative;
+   
+}
+
+.TodoItem-Text{
+    width: 800px;
+    font-family: "Montserrat";
+    font-size: 18px;
+}
+
+.Icon{
+    width: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.Icon-Check{
+    color:  #7C7C7C;
+}
+
+.Icon-Check--Completed{
+    color: #01BE01;
+}
+
+.Text--Completed{
+    text-decoration: line-through;
+}
+
+.Icon-Delete{
+    position: absolute;
+    top:-20px;
+    right: -20px;
+}
+
+.Icon-Delete:hover {
+    color: red;
+  }

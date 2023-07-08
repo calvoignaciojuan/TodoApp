@@ -1,0 +1,18 @@
+.TodoSearch{
+    background-color: white;
+    width: 600px;
+    height: 64px;
+    text-align: center;
+    display: flex;
+   
+    font-family: 'Montserrat';
+    font-size: x-large; 
+
+}
+
+.TodoSearch ::placeholder{
+    /* font-size: 64px; */
+    color: #F2F4F5;
+    font-weight: 400;
+  
+}

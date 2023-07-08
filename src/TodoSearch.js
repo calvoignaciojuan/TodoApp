@@ -1,7 +1,8 @@
+import "./TodoSearch.css";
 
 function TodoSearch(){
     return(
-        <input placeholder="agregar tarea" />
+        <input className="TodoSearch" placeholder="Filter" />
     );
 }
 
