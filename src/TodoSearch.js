@@ -1,8 +1,16 @@
 import "./TodoSearch.css";
 
-function TodoSearch(){
+
+function TodoSearch({textToFilter,setTextToFilter}){
+
     return(
-        <input className="TodoSearch" placeholder="Filter" />
+        <input  className="TodoSearch"
+                placeholder="Filter"
+                value = {textToFilter}
+                onChange={ (event)=>{
+                    setTextToFilter(event.target.value);
+                }}
+        />
     );
 }
 

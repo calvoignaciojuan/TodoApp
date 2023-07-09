@@ -1,12 +1,24 @@
 import "./TodoTitle.css"
 
-function TodoTitle(){
-    return(
+function TodoTitle({completedTasks,totalTasks}){
 
-        <h1 className="TodoTitle">
-            Completaste <span>3</span> de <span>5</span> TODOs
-        </h1>
-    );
+    
+    if((completedTasks === totalTasks)&& (totalTasks!==0)){
+    
+        return(
+            <h1 className="TodoTitle">
+               VAMOSSS LOCOO HICISTE TODOO SEMENTAL ITALIANOOO!!
+            </h1>
+        );
+    }else{
+        return(
+            <h1 className="TodoTitle">
+               Completaste <span> {completedTasks} </span> de <span> {totalTasks} </span> TODOs
+            </h1>
+        );
+    }
+
+    
 }
 
 export { TodoTitle };

@@ -1,8 +1,11 @@
 import "./TodoButton.css";
 
-function CreateTodoButton(){
+function CreateTodoButton({addTask}){
     return(
-        <button type="button">add task</button>
+        <button type="button"
+                onClick={addTask}
+        >add task
+        </button>
     );
 }
 
