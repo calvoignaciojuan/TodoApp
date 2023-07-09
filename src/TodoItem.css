@@ -17,32 +17,6 @@
     cursor: pointer;
 }
 
-.Icon{
-    width: 50px;
-    font-weight: bold;
-    text-align: center;
-    font-size: xx-large;
+.TodoItem-Text:hover{
+    color: green;
 }
-
-.Icon-Check{
-    color:  #7C7C7C;
-}
-
-.Icon-Check--Completed{
-    color: #01BE01;
-}
-
-.Text--Completed{
-    text-decoration: line-through;
-}
-
-.Icon-Delete{
-    position: absolute;
-    top:-20px;
-    right: -20px;
-    cursor: pointer;
-}
-
-.Icon-Delete:hover {
-    color: red;
-  }

@@ -1,0 +1,34 @@
+
+.Icon{
+    width: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.Icon-Check{
+    color:  #7C7C7C;
+}
+.Icon-Check:hover svg{
+    fill:green;
+}
+
+.Icon-Check--Completed{
+    color: #01BE01;
+}
+
+.Text--Completed{
+    text-decoration: line-through;
+}
+
+.Icon-Delete{
+    position: absolute;
+    top:-20px;
+    right: -20px;
+    
+}
+
+.Icon-Delete:hover svg {
+    fill: red;
+  }
