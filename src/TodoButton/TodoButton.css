@@ -1,7 +1,14 @@
 
-button {
-    width: 100px;
-    height: 60px;
+.buttonOpenForm {
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+    background-color: #61DAFA;
+    border-radius: 50%;
     font-family: "Montserrat";
-    font-size: medium;
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    top: 90%;
+    right: 0%;    
 }

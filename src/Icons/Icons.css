@@ -1,6 +1,8 @@
 
 .Icon{
-    width: 50px;
+    padding: 12px;
+    width: 24px;
+    height: 24px;
     font-weight: bold;
     text-align: center;
     font-size: xx-large;
@@ -24,8 +26,8 @@
 
 .Icon-Delete{
     position: absolute;
-    top:-20px;
-    right: -20px;
+    top:-30px;
+    right: -24px;
     
 }
 

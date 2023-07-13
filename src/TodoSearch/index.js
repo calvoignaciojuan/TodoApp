@@ -1,7 +1,12 @@
+import React from "react";
 import "./TodoSearch.css";
+import { TodoContext } from "../TodoContext";
 
 
-function TodoSearch({textToFilter,setTextToFilter}){
+
+function TodoSearch(){
+
+    const {textToFilter,setTextToFilter} = React.useContext(TodoContext);
 
     return(
         <input  className="TodoSearch"

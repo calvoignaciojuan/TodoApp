@@ -1,19 +1,28 @@
+import React from "react";
 import "./TodoTitle.css"
+import { TodoContext } from "../TodoContext";
 
-function TodoTitle({completedTasks,totalTasks}){
 
+
+function TodoTitle(){
+
+    const {completedTasks,totalTasks} = React.useContext(TodoContext);
+
+    const plural = () =>{
+        return(totalTasks>1);
+    }
     
-    if((completedTasks === totalTasks)&& (totalTasks!==0)){
+    if((completedTasks === totalTasks) && (totalTasks!==0)){
     
         return(
             <h1 className="TodoTitle">
-               VAMOSSS LOCOO HICISTE TODOO SEMENTAL ITALIANOOO!!
+               Completaste todas las tareas!! :D
             </h1>
         );
     }else{
         return(
             <h1 className="TodoTitle">
-               Completaste <span> {completedTasks} </span> de <span> {totalTasks} </span> TODOs
+               Completaste <span> {completedTasks} </span> de <span> {totalTasks} </span> {plural()? "Tareas" : "Tarea"}
             </h1>
         );
     }

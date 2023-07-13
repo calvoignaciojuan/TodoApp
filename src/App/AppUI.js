@@ -4,23 +4,37 @@ import { TodoItem } from '../TodoItem';
 import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
 import { CreateTodoButton } from '../TodoButton';
+import { LoadingTodos } from '../LoadingTodos';
+import { TodoContext } from '../TodoContext';
+import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
+import { EmptyTodo} from "../EmptyTodo";
+import React from 'react';
 
+function AppUI(){
 
-function AppUI({filteredTasks,completedTasks,totalTasks,textToFilter,setTextToFilter,addTask,deleteTask,completeTask}){
+    const {
+        loading,
+        error,
+        filteredTasks,     
+        deleteTask,
+        completeTask,
+        openModal,
+    } = React.useContext(TodoContext);
 
     return (
         <>
           
-          <TodoTitle   completedTasks={completedTasks}
-                       totalTasks={totalTasks} 
-                      //  checkTotal = {()=>{checkTotal(completedTasks,totalTasks)}}
-          />
+          <TodoTitle />
           
-          <TodoSearch  textToFilter={textToFilter}
-                       setTextToFilter={setTextToFilter} 
-          />
+          <TodoSearch />
     
           <TodoList>
+
+            {loading   && <LoadingTodos />}
+            {error     && <p>Error al cargar</p>}
+            {(!loading && !error && filteredTasks.length === 0) && <EmptyTodo/>}
+
             {
               filteredTasks.map(item => 
                 <TodoItem key={item.textoTarea} 
@@ -32,8 +46,14 @@ function AppUI({filteredTasks,completedTasks,totalTasks,textToFilter,setTextToFi
             }
            </TodoList>      
          
-          <CreateTodoButton addTask={()=> addTask }/> 
-    
+          <CreateTodoButton /> 
+            
+          {openModal &&  
+           <Modal>
+                <TodoForm />
+           </Modal>  }
+        
+
         </>
       );
 

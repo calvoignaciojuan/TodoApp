@@ -1,0 +1,26 @@
+.EmptyTodo{
+    position: absolute;
+    bottom: 20px;
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.EmptyTodo p{
+
+    width: 900px;
+    height: 40px;    
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;
+}
