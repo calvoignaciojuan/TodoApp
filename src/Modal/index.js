@@ -1,11 +1,11 @@
-import React from "react";
-import { createPortal } from "react-dom";
 import "./Modal.css";
+
+import { createPortal } from "react-dom";
 
 function Modal({children}){
 
     return createPortal(
-        <div className="backGround-addTask">
+        <div className="modalBackground">
             {children}
         </div>,
         document.getElementById("modal")

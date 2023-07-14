@@ -1,3 +1,4 @@
+
 .todoForm{
     height: 313px;
     width: 327px;
@@ -10,7 +11,6 @@
     justify-content: center;
     align-items: center;
     box-shadow:  0px 5px 50px 0px #61DAFA80;
-    ;
 }
 
 .todoForm label{
@@ -19,8 +19,6 @@
     color: #1E1E1F;
     text-align: center;
     padding-bottom: 10px;
-    /* font-weight: bold; */
-    /* font-weight: bold; */
 }
 
 .todoForm textarea{
@@ -54,7 +52,6 @@
     text-align: center;
 
     margin: 10px;
-
 }
 
 .todoButton--cancelar{
@@ -62,7 +59,6 @@
     left: 902px;
     border-radius: 4px;
     background-color: #FAFAFA;
-
 }
 
 .todoButton--añadir{

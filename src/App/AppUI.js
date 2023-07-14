@@ -5,8 +5,8 @@ import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
 import { CreateTodoButton } from '../TodoButton';
 import { LoadingTodos } from '../LoadingTodos';
-import { TodoContext } from '../TodoContext';
 import { Modal } from '../Modal';
+import { TodoContext } from '../TodoContext';
 import { TodoForm } from '../TodoForm';
 import { EmptyTodo} from "../EmptyTodo";
 import React from 'react';
@@ -49,9 +49,10 @@ function AppUI(){
           <CreateTodoButton /> 
             
           {openModal &&  
-           <Modal>
+           (<Modal>
                 <TodoForm />
-           </Modal>  }
+           </Modal>)  
+           }
         
 
         </>
