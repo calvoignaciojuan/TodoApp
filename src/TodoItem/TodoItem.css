@@ -11,7 +11,7 @@
 }
 
 .TodoItem-Text{
-    width: 800px;
+    width: 50vw;
     font-family: "Montserrat";
     font-size: 18px;
     cursor: pointer;

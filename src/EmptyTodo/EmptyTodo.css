@@ -1,7 +1,7 @@
 .EmptyTodo{
     position: absolute;
     bottom: 20px;
-    width: 700px;
+    width: 50vw;
     height: 200px;
     background-color: white;
     margin-top: 50px;
@@ -18,9 +18,9 @@
 
 .EmptyTodo p{
 
-    width: 900px;
+    /* width: 900px; */
     height: 40px;    
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 
     text-align: center;
